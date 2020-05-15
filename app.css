@@ -357,6 +357,7 @@ p {
     background-color: black;
 
     border: 2px solid #e84545;
+    border-radius: 2px;
 
     transition: background .2s linear;
 }
