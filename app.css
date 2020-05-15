@@ -45,7 +45,11 @@ p {
     left: 0;
     z-index: 1000;
     
+<<<<<<< HEAD
 /*    border-bottom: 1px solid #e84545;*/
+=======
+    
+>>>>>>> 845d24ffe5e27e1c2939c8104adc464d634b4451
 }
 
 .header__inner {
