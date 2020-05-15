@@ -45,7 +45,7 @@ p {
     left: 0;
     z-index: 1000;
     
-    border-bottom: 1px solid #e84545;
+/*    border-bottom: 1px solid #e84545;*/
 }
 
 .header__inner {
@@ -96,8 +96,10 @@ p {
     background: url("images/everest.jpg");
     background-size: cover;
     
+/*
     border-top: 1px solid #e84545;
     border-bottom: 1px solid #e84545;
+*/
 }
 
 
@@ -214,8 +216,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     
+/*
     border-top: 1px solid #e84545;
     border-bottom: 1px solid #e84545;
+*/
 }
 
 .works__item {
@@ -464,6 +468,13 @@ p {
     text-transform: uppercase;
 }
 
+.container--download {
+    width: 800px;
+    padding: 20px 20px;
+    border: 1px solid #e84545;
+    border-radius: 6px;
+}
+
 
 
 
@@ -471,14 +482,14 @@ p {
 
 
 .footer {
-    border-top: 1px solid #e84545;
+/*    border-top: 1px solid #e84545;*/
     background-color: #000;
 }
 
 .footer__inner {
     display: flex;
     flex-wrap: wrap;
-    padding: 70px 0;
+    padding: 15px 0;
 }
 
 .footer__block {
@@ -517,7 +528,7 @@ p {
     padding: 20px 0;
 
     background-color: #000000;
-    border-top: 1px solid #e84545;
+/*    border-top: 1px solid #e84545;*/
 }
 
 .copyright__text {
