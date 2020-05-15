@@ -493,7 +493,7 @@ p {
 .footer__inner {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 0;
+    padding: 70px 0;
 }
 
 .footer__block {
