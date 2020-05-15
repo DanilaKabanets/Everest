@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color:#aaaaaa;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+
+/* Container*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    /*    border-bottom: 1px solid #515369;*/
+}
+
+
+/*Nav*/
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity .2s linear;
+
+}
+
+.nav__link:hover {
+    opacity: 1;
+    /*    text-decoration: underline;*/
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+/*intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    margin-top: 100px;
+    background: url("images/everest.jpg");
+    background-size: cover;
+}
+
+.intro__title {
+    margin: 0 0 30px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+    /*    background-color: rgba(147, 147, 147, 0.5);*/
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+    /*    background-color: rgba(147, 147, 147, 0.5);*/
+}
+
+.intro__subtitle {
+    font-size: 22px;
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    /*    background-color: rgba(147, 147, 147, 0.5);*/
+
+
+
+}
+
+/*button*/
+
+.btn {
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 2px;
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+
+    transition: background 0.2s linear;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover {
+    background-color: #c62f2f;
+}
+
+
+/*features*/
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 95px 0;
+}
+
+.features__item {
+    width: 33.33333%;
+    padding: 0 40px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 25px;
+}
+
+.features__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features__text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #bbbbbb;
+}
+
+/*Works*/
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    width: 25%;
+    height: 350px;
+
+/*
+    border-bottom: 0.5px solid #aaaaaa ;
+    border-right: 0.5px solid #aaaaaa;
+*/
+
+    position: relative;
+    overflow: hidden;
+}
+
+.works_photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0,0,0,.9);
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.works__item:hover .works__content {
+    opacity: 1;
+
+}
+
+.works__title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.works__text {
+    margin: 0 10%; 
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/*Team*/
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+    color: #fff;
+}
+
+.team__prof {
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+}
+
+.team__text {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
