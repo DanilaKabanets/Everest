@@ -3,7 +3,7 @@ body {
     background: black;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    color:#aaaaaa;
+    color: #aaaaaa;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -95,6 +95,7 @@ p {
     background-size: cover;
 }
 
+
 .intro__title {
     margin: 0 0 30px;
 
@@ -113,6 +114,7 @@ p {
     max-width: 970px;
     margin: 0 auto;
     text-align: center;
+
     /*    background-color: rgba(147, 147, 147, 0.5);*/
 }
 
@@ -184,7 +186,7 @@ p {
     text-transform: uppercase;
 }
 
-.features__text{
+.features__text {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -202,7 +204,7 @@ p {
     width: 25%;
     height: 350px;
 
-/*
+    /*
     border-bottom: 0.5px solid #aaaaaa ;
     border-right: 0.5px solid #aaaaaa;
 */
@@ -213,11 +215,15 @@ p {
 
 .works_photo {
     position: absolute;
+    width: 100%;
+    height: 100%;
+/*
     top: 50%;
     left: 50%;
+*/
     z-index: 1;
-    
-    transform: translate3d(-50%, -50%, 0);
+
+/*    transform: translate3d(-50%, -50%, 0);*/
 }
 
 .works__content {
@@ -225,13 +231,13 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+
     width: 100%;
     height: 100%;
-    
-    background-color: rgba(0,0,0,.9);
+
+    background-color: rgba(0, 0, 0, .9);
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 2;
     opacity: 0;
@@ -252,7 +258,7 @@ p {
 }
 
 .works__text {
-    margin: 0 10%; 
+    margin: 0 10%;
     font-size: 14px;
     color: #fff;
 }
@@ -307,20 +313,38 @@ p {
 
 
 
+/*social*/
 
+.social {
+    display: flex;
 
+}
 
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    background-color: black;
 
+    border: 2px solid #e84545;
 
+    transition: background .2s linear;
+}
 
+.social__item:hover {
+    background-color: #e84545;
+}
 
+.social__item:hover .social__icon {
+    fill: #000;
+}
 
-
-
-
-
-
-
-
-
-
+.social__icon {
+    fill: #e84545;
+    display: block;
+    height: 25px;
+    transition: fill .1s linear;
+}
