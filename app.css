@@ -560,7 +560,7 @@ p {
     width: 28px;
     height: 3px;
 
-    background-color: #fff;
+    background-color:#fff;
 
     font-size: 0;
     color: transparent;
@@ -749,6 +749,6 @@ p {
 
     /* Reviews */
     .reviews__img {
-        right: -100px;
+        right: -350px;
     }
 }
