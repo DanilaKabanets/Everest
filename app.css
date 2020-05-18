@@ -5,6 +5,8 @@ body {
     font-size: 14px;
     color: #aaaaaa;
     -webkit- font-smoothing: antialiased;
+    overflow-x:hidden;
+    max-width: 100%;
 }
 
 *,
