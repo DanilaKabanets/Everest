@@ -395,6 +395,7 @@ p {
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .reviews__photo {
@@ -560,7 +561,7 @@ p {
     width: 28px;
     height: 3px;
 
-    background-color:#fff;
+    background-color:#e84545;
 
     font-size: 0;
     color: transparent;
@@ -573,7 +574,7 @@ p {
     content: "";
     height: 100%;
 
-    background-color: #fff;
+    background-color: #e84545;
 
     position: absolute;
     right: 0;
@@ -645,7 +646,7 @@ p {
     /* Reviews */
     .reviews__photo {
         width: 100%;
-        margin: 15px 0 40px;
+        margin: 0;
         overflow: hidden;
     }
 
